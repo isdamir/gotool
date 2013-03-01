@@ -57,6 +57,7 @@ type PageParam struct {
 	CookieName        string
 	CookieSessionName string
 	CookieSessionKey  string
+	CookieDomain	  string
 	I18nName          string
 	Expires           int
 	TimerDuration     string
@@ -86,8 +87,8 @@ func NewPage(param PageParam) Page {
 			Func: template.FuncMap{},
 		},
 		MAX_FORM_SIZE: param.MaxFormSize,
-		MemorySession: memorysession.New(param.CookieName, param.Expires, param.TimerDuration),
-		FileSession:   filesession.New(param.CookieName, param.Expires, param.SessionDir, param.TimerDuration),
+		MemorySession: memorysession.New(param.CookieName, param.CookieDomain, param.Expires, param.TimerDuration),
+		FileSession:   filesession.New(param.CookieName, param.CookieDomain, param.Expires, param.SessionDir, param.TimerDuration),
 		CookieSession: cookiesession.New(param.CookieSessionName, param.CookieSessionKey),
 		I18n:          i18n.New(param.I18nName),
 		UrlManage:     urlmanage.New(),
