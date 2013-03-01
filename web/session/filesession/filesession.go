@@ -173,6 +173,10 @@ func New(cookieName, cookieDomain string, expires int, sessionDir string, timerD
 	if cookieName == "" {
 		cookieName = "GoLangerSession"
 	}
+	if cookieDomain==""{
+		cookieDomain="GoLangerDomain"
+	}
+	
 
 	if expires <= 0 {
 		expires = 3600 * 24
