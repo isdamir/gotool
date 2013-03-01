@@ -3,7 +3,7 @@ package config
 import (
 	"bytes"
 	"encoding/json"
-	"gotool.iyf.cc/log"
+	"github.com/iyf/gotool/log"
 	"io/ioutil"
 	"path/filepath"
 	"regexp"

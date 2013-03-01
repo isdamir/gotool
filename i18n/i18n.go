@@ -1,7 +1,7 @@
 package i18n
 
 import (
-	"gotool.iyf.cc/log"
+	"github.com/iyf/gotool/log"
 	"encoding/json"
 	"io/ioutil"
 	"os"

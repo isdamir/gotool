@@ -1,8 +1,8 @@
 package web
 
 import (
-	"gotool.iyf.cc/config"
-	"gotool.iyf.cc/log"
+	"github.com/iyf/gotool/config"
+	"github.com/iyf/gotool/log"
 	"os"
 )
 

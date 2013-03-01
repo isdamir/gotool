@@ -3,7 +3,7 @@ package memorysession
 import (
 	"crypto/rand"
 	"encoding/base64"
-	"gotool.iyf.cc/utils"
+	"github.com/iyf/gotool/utils"
 	"io"
 	"net/http"
 	"sync"

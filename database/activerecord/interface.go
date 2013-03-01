@@ -2,7 +2,7 @@ package activerecord
 
 import (
 	"database/sql"
-	"gotool.iyf.cc/utils"
+	"github.com/iyf/gotool/utils"
 )
 
 type DataBase interface {

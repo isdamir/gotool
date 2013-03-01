@@ -2,7 +2,7 @@ package validate
 
 import (
 	"fmt"
-	"gotool.iyf.cc/log"
+	"github.com/iyf/gotool/log"
 	"regexp"
 	"runtime"
 	"strconv"

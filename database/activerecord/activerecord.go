@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"errors"
 	"fmt"
-	"gotool.iyf.cc/utils"
+	"github.com/iyf/gotool/utils"
 	"reflect"
 	"strconv"
 	"strings"

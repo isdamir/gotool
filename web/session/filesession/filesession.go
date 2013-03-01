@@ -23,8 +23,8 @@ import (
 	//(1)
 	//"errors"
 	//(1)
-	"gotool.iyf.cc/log"
-	"gotool.iyf.cc/utils"
+	"github.com/iyf/gotool/log"
+	"github.com/iyf/gotool/utils"
 	"io"
 	"io/ioutil"
 	"net/http"

@@ -1,7 +1,7 @@
 package template
 
 import (
-	"gotool.iyf.cc/log"
+	"github.com/iyf/gotool/log"
 	"io"
 	"text/template"
 )

@@ -19,8 +19,8 @@ import (
 	"encoding/base64"
 	"encoding/binary"
 	"encoding/gob"
-	"gotool.iyf.cc/log"
-	"gotool.iyf.cc/utils"
+	"github.com/iyf/gotool/log"
+	"github.com/iyf/gotool/utils"
 	"net/http"
 	"strings"
 )

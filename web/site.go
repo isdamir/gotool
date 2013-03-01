@@ -1,7 +1,7 @@
 package web
 
 import (
-	"gotool.iyf.cc/log"
+	"github.com/iyf/gotool/log"
 	"io/ioutil"
 	"net/http"
 	"os"

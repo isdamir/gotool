@@ -1,7 +1,7 @@
 package urlmanage
 
 import (
-	"gotool.iyf.cc/log"
+	"github.com/iyf/gotool/log"
 	"net/http"
 	"regexp"
 	"strconv"

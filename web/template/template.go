@@ -2,7 +2,7 @@ package template
 
 import (
 	"fmt"
-	"gotool.iyf.cc/log"
+	"github.com/iyf/gotool/log"
 	"io"
 	"io/ioutil"
 	"path/filepath"
