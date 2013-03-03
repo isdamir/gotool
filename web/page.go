@@ -589,7 +589,7 @@ func (p *Page) routeController(i interface{}, w http.ResponseWriter, r *http.Req
 		ppc.CookieSession.Set(ppc.COOKIE_SESSION, w, r)
 	}
 
-	if !(p.Document.Close || p.Document.Hide) && ppc.Config.SupportTemplate {
+	if !(ppc.Document.Close || ppc.Document.Hide) && ppc.Config.SupportTemplate {
 		ppc.setStaticDocument()
 		ppc.routeTemplate(w, r)
 	}
