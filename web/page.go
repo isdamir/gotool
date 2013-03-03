@@ -540,12 +540,13 @@ func (p *Page) routeController(i interface{}, w http.ResponseWriter, r *http.Req
 	if ppc.Config.AutoGenerateHtml {
 		ppc.Document.GenerateHtml = true
 	}
+	/*先初始化session在执行action的Init*/
+	ppc.initModule(w, r)
 
 	if ppc.CurrentAction != "Init" {
 		ppc.callMethod(tpc, vpc, "Init", rvr, rvw)
 	}
 
-	ppc.initModule(w, r)
 
 	if _, ok := tpc.MethodByName(ppc.CurrentAction); ok && ppc.filterMethod(ppc.CurrentAction) {
 		ppc.filterDoMethod(tpc, vpc, "Before_", rvr, rvw)
