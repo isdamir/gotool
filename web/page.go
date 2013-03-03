@@ -691,6 +691,7 @@ func (p *Page) routeTemplate(w http.ResponseWriter, r *http.Request) {
 			log.Error("<Page.routeTemplate> ", err)
 			w.Write([]byte(fmt.Sprint(err)))
 		} else {
+			/*向模板传递值*/
 			templateVar := map[string]interface{}{
 				"G":        p.GET,
 				"P":        p.POST,
