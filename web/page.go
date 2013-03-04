@@ -701,7 +701,7 @@ func (p *Page) routeTemplate(w http.ResponseWriter, r *http.Request) {
 				"C":        p.COOKIE,
 				"CS":       p.COOKIE_SESSION,
 				"D":        p.Document,
-				"L":        p.LANG,,
+				"L":        p.LANG,
 				"T":		p.Template,
 				"Custom":	p.Config.Custom,
 				"Config":	p.Config,
