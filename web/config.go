@@ -47,7 +47,7 @@ type Config struct {
 	Environment               map[string]string      `json:"Environment"`
 	Database                  map[string]string      `json:"Database"`
 	UrlManageRule             []string               `json:"UrlManageRule"`
-	M                         map[string]interface{} `json:"Custom"`
+	Custom                         map[string]interface{} `json:"Custom"`
 	configDir                 string
 	configLastModTime         int64
 }

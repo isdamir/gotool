@@ -701,9 +701,10 @@ func (p *Page) routeTemplate(w http.ResponseWriter, r *http.Request) {
 				"C":        p.COOKIE,
 				"CS":       p.COOKIE_SESSION,
 				"D":        p.Document,
-				"L":        p.LANG,
-				"Config":   p.Config.M,
-				"Template": p.Template,
+				"L":        p.LANG,,
+				"T":		p.Template,
+				"Custom":	p.Config.Custom,
+				"Config":	p.Config,
 			}
 
 			p.site.base.rmutex.RLock()
