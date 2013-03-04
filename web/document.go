@@ -13,6 +13,9 @@ type Document struct {
 	Css                map[string]string
 	Js                 map[string]string
 	Img                map[string]string
+	CssPath            string //当前view对应的css目录
+	JsPath             string //当前view对应的Js目录
+	ImgPath            string //当前view对应的Img目录
 	GlobalCssFile      string
 	GlobalJsFile       string
 	GlobalIndexCssFile string

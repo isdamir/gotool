@@ -610,7 +610,7 @@ func (p *Page) setStaticDocument() {
 
 		_, errgcss := os.Stat(DcssPath + "global.css")
 		_, errcss := os.Stat(DcssPath + fileNameNoExt + ".css")
-
+		p.Document.CssPath=p.Document.Css[cssPath]
 		if errgcss == nil {
 			p.Document.GlobalIndexCssFile = p.Document.Css[cssPath] + "global.css"
 			log.Debug("<Page.setStaticDocument> ", "p.Document.GlobalIndexCssFile:", p.Document.GlobalIndexCssFile)
@@ -630,7 +630,7 @@ func (p *Page) setStaticDocument() {
 
 		_, errgjs := os.Stat(DjsPath + "global.js")
 		_, errjs := os.Stat(DjsPath + fileNameNoExt + ".js")
-
+		p.Document.JsPath=p.Document.Js[jsPath]
 		if errgjs == nil {
 			p.Document.GlobalIndexJsFile = p.Document.Js[jsPath] + "global.js"
 			log.Debug("<Page.setStaticDocument> ", "p.Document.GlobalIndexJsFile:", p.Document.GlobalIndexJsFile)
@@ -646,6 +646,7 @@ func (p *Page) setStaticDocument() {
 		imgPath := strings.Trim(p.currentPath, "/")
 		DimgPath := p.Config.StaticImgDirectory + imgPath + "/"
 		p.Document.Img[imgPath] = p.site.Root + DimgPath[len(p.Config.AssetsDirectory):]
+		p.Document.ImgPath=p.Document.Img[imgPath]
 		log.Debug("<Page.setStaticDocument> ", "p.Document.Img["+imgPath+"]:", p.Document.Img[imgPath])
 	}
 }
