@@ -15,7 +15,7 @@ func (p * Browser) OpenBrowserAsync(url string){
 	go openBrowser(url)
 }
 func openBrowser(url string){
-	cmd := exec.Command("start",url);
+	cmd := exec.Command("xdg-open",url);
 	 err := cmd.Start()
 	 if err!=nil{
 	 	log.Fatal(err)
