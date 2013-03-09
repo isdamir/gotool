@@ -8,7 +8,7 @@ import(
     _ "github.com/iyf/gotool/middleware"
     _ "github.com/iyf/gotool/utils"
     _ "github.com/iyf/gotool/web"
-      "github.com/iyf/gotool/browser"
+    _ "github.com/iyf/gotool/browser"
 )
 
 const (
